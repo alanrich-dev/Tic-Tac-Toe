@@ -1,0 +1,15 @@
+/*for downstream readibility*/
+:root {
+    --blue:;
+    --accentBlue:;
+    --orange:;
+    --accentOrange:;
+    --teal:;
+}
+body{
+    max-width: 70rem;
+    margin:0 auto;
+    height:100vh;
+    font:Inter;
+    font-weight: 900;
+}
