@@ -16,7 +16,7 @@ const player = (name, marker) => {
     return {name: name, marker: marker }
 }
 
-// 2. Gameboard
+// 2. Gameboard Objet
 const gameBoard = (() {
     // Generate board array
     let gameBoardArr = [x,o,x,o,x,o,x,o,x];
@@ -28,9 +28,16 @@ const gameBoard = (() {
     // Listen to the squares and update board according to rules of game
 })();
 
-// 3. Game
-const game = (() => {
-    // An array of winning conditions
+// 3. GamePlay Object
+const gamePlay = (() => {
+    // Declare Players
+    const player1 = player('player one', 'X');
+    const player2 = player('player two', 'O');
+    // Declare starting point...who's active, is there a winner, spots remain?
+    let activePlayer = player1;
+    let winnerExists = false;
+    let squaresRemaining = 9;
+    // Declare winning conditions
     const winners = [
         [0,1,2],
         [3,4,5],
@@ -40,6 +47,10 @@ const game = (() => {
         [2,5,8],
         [0,4,8],
         [2,4,6]
-]
+    ]
+    // Declare checkForWinner func
+    function checkForWinner(){
+        // if X or O = any of the winning conditions
+    }
 
 })();
