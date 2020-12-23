@@ -1,4 +1,4 @@
-/*for downstream readibility*/
+/*** For Downstream Readibility ***/
 :root {
     --blue:;
     --accentBlue:;
@@ -6,10 +6,55 @@
     --accentOrange:;
     --teal:;
 }
+/*** Global ***/
+html{
+    font:Inter;
+    font-weight: 900;
+    /*font-size:10px;*/
+    background-color:var(--orange);
+}
 body{
     max-width: 70rem;
     margin:0 auto;
     height:100vh;
-    font:Inter;
-    font-weight: 900;
 }
+/*** Header ***/
+header{
+    margin-top: 10%;
+    text-align: center;
+    color: var(--blue);
+    margin-bottom: 5rem;
+}
+.title{
+    font-size: 5rem;
+    margin-bottom: 6rem;
+}
+.subtitle{
+    font-size: 1.67rem;
+    color: var(--teal);
+}
+/*** Main ***/
+.gameboard{
+    position: relative;
+    width:100%;
+    padding-top: 100%;
+    border-radius: 5px;
+}
+.squares{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 1rem;
+    border-radius: 5px;
+}
+.square{ 
+    position: fixed;
+    background-color: rgb(162,206,221);
+    border-radius: 3px;
+}
+/*** Player Markers ***/
