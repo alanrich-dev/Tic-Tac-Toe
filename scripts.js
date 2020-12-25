@@ -51,6 +51,12 @@ const gamePlay = (() => {
     // Declare checkForWinner func
     function checkForWinner(){
         // if X or O = any of the winning conditions
+        winners.forEach((item)) => {
+            if (gameBoard.board[item[0]] === this.activePlayer.marker && gameBoard.board[item[1]] === this.activePlayer.marker && gameBoard.board[item[2]] === this.activePlayer.marker) {
+                subtitle.innerHTML = `${this.activePlayer.name} is the winner`;
+                this.winnerDeclared = true;
+            }
+        }
     }
 
 })();
