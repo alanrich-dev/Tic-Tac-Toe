@@ -1,10 +1,10 @@
 /*** For Downstream Readibility ***/
 :root {
-    --blue:;
-    --accentBlue:;
-    --orange:;
-    --accentOrange:;
-    --teal:;
+    --blue:#0c2fdf;
+    --accentBlue:#4caee3;
+    --orange:#f2a30b;
+    --accentOrange:#ffe182;
+    --teal:#00788c;
 }
 /*** Global ***/
 html{
@@ -36,6 +36,7 @@ header{
 /*** Main ***/
 .gameboard{
     position: relative;
+    background-color: var(--teal);
     width:100%;
     padding-top: 100%;
     border-radius: 5px;
@@ -53,8 +54,16 @@ header{
     border-radius: 5px;
 }
 .square{ 
-    position: fixed;
+    position: relative;
     background-color: rgb(162,206,221);
     border-radius: 3px;
+}
+.X{
+    background-color: green;
+    /*color: ;*/
+}
+.O{
+    background-color: red;
+    /*color: ;*/
 }
 /*** Player Markers ***/
